@@ -1,0 +1,106 @@
+/*Let's mark up the HTML file*/
+
+/*The 2 first functions are about making a background for the page by adding an image and making a suitable space for the body element*/
+/*Background color*/
+.all {
+    background-color: rgb(2, 2, 44);
+    opacity: 80%;
+}
+/*Background image*/
+body {
+    background: url(cover.jpg);
+    background-repeat:repeat;
+    background-attachment:fixed;
+    background-blend-mode:darken;
+    height: 100vh;
+    width: 100wh;
+}
+
+/*These 3 functions are styling the top elements of the project (TV name and the purpose of the page)*/
+/*This is there division*/
+.top {
+    height: auto;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifs;
+} 
+/*This is the title of the page style (TV name)*/
+.title {
+    text-align: center;
+    text-decoration: solid;
+    color: white;
+    font-size: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/*This is the page description style (The general purpose of the page)*/
+.description {
+    font-size: 30px;
+    font-style: italic;
+    font-family: verdana;
+}
+
+/*This style part is styling where the user is going to enter his/her personal data and also fill his/her suggestion*/
+/*This function styles all the form altogether*/
+.theform {
+    height: auto;
+    width: 90%;
+    margin: auto;
+    background-color:  rgb(2, 2, 44);    
+    opacity: 100%;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px; 
+    margin:auto;
+    text-align: left;
+    font-family: verdana;
+}
+
+/*The next ones are styling fieldset and legend elements*/
+fieldset {
+    border-color: white;  
+    font-family: verdana;      
+}
+legend {
+    margin-bottom: 20px;
+}
+
+/*The next 2 funtions styles generally the labels and inputs elements altogether*/
+.labels {
+    display: block;
+    margin-bottom: 10px;
+}
+.inputs {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    border-radius: 0.2cm;
+    border-color:  rgb(2, 2, 44);
+}
+
+/*But some labels and inputs can not have similar properties even tho they are of same types example like if they must be on a same block but if you observe the above general properties u see that they are on diffrent blocks*/
+.five,.six,.seven,.eight,.nine,.ten,.eleven {
+    display: inline-block;
+    width: unset;
+    height: unset;
+}
+.L5,.L6,.L7,.L8,.L9,.L10,.L11 {
+   display: block;
+}
+
+/*The last two functions are all about styling the submit button*/
+.twelve {
+    background-color:rgb(164, 164, 240);  
+}
+.twelve:hover {
+    background-color: rgb(2, 2, 44);
+    color: white;
+}
+.twelve:active {
+    background-color: blue;
+    color: white;
+}

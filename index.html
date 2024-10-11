@@ -1,0 +1,109 @@
+<!-- This project a web page design which ask the user to make suggestion in order to improve the functionality of a sport TV channel-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSTV</title>
+    <link rel="stylesheet" href="mystyles.css"/>
+</head>
+<section>
+<div class="all">
+<body>
+
+<!-- It starts with a division defining the top essential information on our project TV name and the purpose of the page-->
+
+<div class="top">
+    <h1 id="title" class="title">SuperStrickersTV Survey Form</h1>
+    <p id="description" class="description">Thank you for taking your time to help us improve our channel services</p>  
+</div>
+
+<!-- The next division is about how the user will enter his/her data and make some suggestions etc... let's break into it -->
+
+<div class="theform">      
+
+<!-- Here the user enters his/her personal information -->   
+
+        <form id="survey-form">
+            <fieldset>
+                <legend>Fill the gaps to make our channel better: </legend>
+                <label id="name-label" for="name" class="labels one">Name:
+                    <input type="text" id="name" class="inputs one" placeholder="Enter your name" required/>
+                </label>
+                <label id="email-label" for="email" class="labels two">Email:
+                    <input type="email" id="email" class="inputs two" placeholder="Enter your email" required/>
+                </label>
+                <label id="number-label" for="age" class="labels three">Age: 
+                    <input type="number" id="number" min="5" max="150" class="inputs three" placeholder="Enter your age" required/>
+                </label>
+                <label class="labels four">Which sport do you prefer most:
+
+<!-- Here the user will choose his/her favourite sport this is done in order to check a sport with highest a popularity in our community -->
+
+                    <select id="dropdown" class="inputs four">
+                        <option>Select one:</option>
+                        <option>Football</option>
+                        <option>Basketball</option>
+                        <option>Volleyball</option>
+                        <option>Tennis</option>
+                        <option>American Football</option>
+                        <option>Racing</option>
+                        <option>Others</option>
+                    </select>
+
+<!-- Then the user will rate our TV channel accordingly this help the TV to make decision making effectivelly -->
+
+                <p>How would you rate our TV Channel services: </p>
+                <div class="L5">
+                <label class="labels five">
+                    <input checked type="radio" name="rate" id="verygood" value="VeryGood" class="inputs five"/> Very Good (100%-75%)</label>
+                </div>  
+                <div class="L6">
+                    <label class="labels six">
+                    <input type="radio" name="rate" id="good" value="Good" class="inputs six"/> Good (75%-50%) </label>
+                </div>
+                <div class="L7">
+                    <label  class="labels seven">
+                    <input type="radio" name="rate" id="bad" value="Bad" class="inputs seven"/> Bad (50%-25%)</label>
+                </div>        
+
+<!-- Then the user will tell the TV what he/she thinks can be improved -->
+
+                <p>What would you like to be improved? (U can select multiple options): </p>
+                <div class="L8">
+                <label class="labels eight">
+                    <input type="checkbox" class="inputs eight" value="morefootball"/> More repeats of International Football Leagues Matches
+                </label>
+                </div>
+                <div class="L9">
+                <label class="labels nine">
+                    <input type="checkbox" class="inputs nine" value="morebasketball"/> More repeats of International Basketball Leagues Matches
+                </label>
+                </div>
+                <div class="L10">
+                <label clas="labels ten">
+                    <input type="checkbox" class="inputs ten" value="morenews"/> More sports news
+                </label>
+                </div>
+                <div class="L11">
+                <label class="labels eleven">
+                    <input type="checkbox" class="inputs eleven" value="moresports"/> Includes other sports    
+                </label>
+                </div>
+
+<!-- The user will be given freedom to express what he/she has not got a chance to express before --> 
+
+            <p>Put your suggestion or comment below:</p>
+            <textarea rows="4" cols="30">What's on your mind? 
+Put your comment here....
+            </textarea>
+            <input id="submit" class="inputs twelve" type="submit" value="Submit"/>
+        </fieldset>
+        </form>
+    </div>
+
+</body>
+</div>
+</section>
+</html>
