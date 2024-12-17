@@ -34,6 +34,7 @@ body {
 .description {
     font-size: 2rem;
     font-style: italic;
+    padding:0 1rem;
 }
 
 /*This style part is styling where the user is going to enter his/her personal data and also fill his/her suggestion*/
